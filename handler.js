@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.hello = async event => {
   return {
     statusCode: 200,
@@ -9,7 +7,7 @@ module.exports.hello = async event => {
         input: event,
       },
       null,
-      2
+      2,
     ),
   };
 };
