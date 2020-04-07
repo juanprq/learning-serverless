@@ -17,3 +17,9 @@ functions:
       - http:
           method: get
           path: moi/{name}
+  hola:
+    handler: handler.hola
+    events:
+      - http:
+          method: post
+          path: hola

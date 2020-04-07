@@ -26,3 +26,12 @@ module.exports.moi = async event => {
     ),
   };
 };
+
+module.exports.hola = async event => {
+  const { name } = JSON.parse(event.body);
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: `Hola en español! ${name}` }, null, 2),
+  };
+};
