@@ -11,3 +11,18 @@ module.exports.hello = async event => {
     ),
   };
 };
+
+module.exports.moi = async event => {
+  const { name } = event.pathParameters;
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify(
+      {
+        message: `Hello ${name}! how it your day?`,
+      },
+      null,
+      2,
+    ),
+  };
+};
