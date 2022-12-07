@@ -23,6 +23,6 @@
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.2",
     "prettier": "^2.0.3",
-    "serverless": "^1.67.0"
+    "serverless": "^3.25.1"
   }
 }
